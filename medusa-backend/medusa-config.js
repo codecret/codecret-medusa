@@ -43,6 +43,12 @@ const plugins = [
     },
   },
   {
+    resolve: `medusa-plugin-ip-lookup`,
+    options: {
+      access_token: process.env.IPSTACK_ACCESS_KEY,
+    },
+  },
+  {
     resolve: "@medusajs/admin",
     /** @type {import('@medusajs/admin').PluginOptions} */
     options: {
